@@ -22,7 +22,7 @@
                         <th class="sticky-left"></th>
                         {% for date, day_data in forecast.items %}
                             {% if day_data.forecasts.0.uv_index != 'N/A' %}
-                                <!-- Käytetään muotoiltua päivämäärää -->
+                                <!-- Use formatted_date instead of date -->
                                 <th class="forecast-column-header" colspan="{{ day_data.forecasts|length }}">
                                     {{ day_data.formatted_date }}
                                 </th>
